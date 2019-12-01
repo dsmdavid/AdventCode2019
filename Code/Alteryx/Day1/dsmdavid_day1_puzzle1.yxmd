@@ -301,6 +301,7 @@ What is the sum of the fuel requirements for all of the modules on your spacecra
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
+          <AnnotationText>FuelNeeded</AnnotationText>
           <DefaultAnnotationText><![CDATA[FuelNeeded = FLOOR([Field_1] / 3) - 2
 ]]></DefaultAnnotationText>
           <Left value="False" />
