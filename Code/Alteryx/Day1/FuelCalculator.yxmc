@@ -1,0 +1,351 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="210" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="1" />
+              <Fields>
+                <Field name="Module" />
+                <Field name="Weight" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>102473</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Module" source="TextInput:" type="Byte" />
+            <Field name="Weight" source="TextInput:" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="318" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="MAX(FLOOR([Weight] / 3) - 2,0)" field="FuelNeeded" size="8" type="Double" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[FuelNeeded = MAX(FLOOR([Weight] / 3) - 2,0)
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Module" source="TextInput:" type="Byte" />
+            <Field name="Weight" source="TextInput:" type="Int32" />
+            <Field name="FuelNeeded" source="Formula: MAX(FLOOR([Weight] / 3) - 2,0)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="462" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber] + 1" field="Iteration" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iteration = [Engine.IterationNumber] + 1
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Module" source="TextInput:" type="Byte" />
+            <Field name="Weight" source="TextInput:" type="Int32" />
+            <Field name="FuelNeeded" source="Formula: MAX(FLOOR([Weight] / 3) - 2,0)" type="Double" />
+            <Field name="Iteration" source="Formula: [Engine.IterationNumber] + 1" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="654" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="654" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Iter</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="462" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Weight] &gt; 0</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Weight</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-01 11:29:34</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-12-01 11:29:34</StartDate>
+              <EndDate>2019-12-01 11:29:34</EndDate>
+              <Operand>0</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Weight] &gt; 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Module" source="TextInput:" type="Byte" />
+            <Field name="Weight" source="TextInput:" type="Int32" />
+            <Field name="FuelNeeded" source="Formula: MAX(FLOOR([Weight] / 3) - 2,0)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Module" source="TextInput:" type="Byte" />
+            <Field name="Weight" source="TextInput:" type="Int32" />
+            <Field name="FuelNeeded" source="Formula: MAX(FLOOR([Weight] / 3) - 2,0)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="546" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Weight" selected="False" />
+            <SelectField field="FuelNeeded" selected="True" rename="Weight" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Module" source="TextInput:" type="Byte" />
+            <Field name="Weight" source="Formula: MAX(FLOOR([Weight] / 3) - 2,0)" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (5)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (6)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>FuelCalculator</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (4)</Name>
+          <ToolId value="4" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (5)</Description>
+              <Name>Macro Output (5)</Name>
+              <ToolId value="5" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (5)</Description>
+              <Name>Macro Output (6)</Name>
+              <ToolId value="6" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImage>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</MacroImage>
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input1</Input>
+        <Output>Iter</Output>
+        <IterationLimit value="10000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="5" Selected="True" />
+        <Tool ToolId="6" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
