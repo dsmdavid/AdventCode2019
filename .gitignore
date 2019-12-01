@@ -1,4 +1,7 @@
 ignore/
 
+.ipynb_checkpoints
+
+
 *.bak
 Code/Alteryx/template.yxmd
