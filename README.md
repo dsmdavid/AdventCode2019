@@ -13,4 +13,4 @@ I will try to solve the puzzles in Alteryx and in Python.
 
 ## Index
 
-1. [Fuel Needed] -- Alteryx  
+1. Fuel Needed -- [Alteryx](Code/Alteryx/Day1) and [Python](Code/Python/Day1/Day1.ipynb)  
