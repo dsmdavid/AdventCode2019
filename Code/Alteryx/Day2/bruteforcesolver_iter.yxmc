@@ -1,0 +1,2384 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.2">
+  <Nodes>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="510" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Blue to highlight general data prep</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="149" g="202" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="870" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Orange for test tool segments</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="188" b="121" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="378" width="312" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Green for inputs and outputs</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="174" g="255" b="174" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="54" y="54" width="1164" height="96" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>The Intcode computer</Text>
+          <Font name="Segoe UI" size="48" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="210" width="456" height="60" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text><![CDATA[Workflow built by: Github/dsmdavid
+]]></Text>
+          <Font name="Segoe UI" size="15.75" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="630" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Purple for joins and unions</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="231" g="206" b="255" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="990" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Red for To-Do lists on unfinished workflows</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="147" b="147" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="1110" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Yellow sticky notes for handovers and WIP</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="255" g="255" b="151" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="294" width="312" height="72" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Documentation Guide:</Text>
+          <Font name="Segoe UI" size="20.25" style="1" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="6" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="150" width="1164" height="48" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>[A longer subtitle that explains in more detail what the workflow is doing]</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="3" />
+          <Justification Justification="3" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="66" y="750" width="312" height="108" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Grey for interface tools</Text>
+          <Font name="Segoe UI" size="20.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor r="218" g="218" b="218" />
+          <Shape shape="0" />
+          <Justification Justification="7" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="462" y="342" width="360" height="384" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>An Intcode program is a list of integers separated by commas (like 1,0,0,3,99). To run one, start by looking at the first integer (called position 0). Here, you will find an opcode - either 1, 2, or 99. The opcode indicates what to do; for example, 99 means that the program is finished and should immediately halt. Encountering an unknown opcode means something went wrong.
+
+Opcode 1 adds together numbers read from two positions and stores the result in a third position. The three integers immediately after the opcode tell you these three positions - the first two indicate the positions from which you should read the input values, and the third indicates the position at which the output should be stored.
+
+For example, if your Intcode computer encounters 1,10,20,30, it should read the values at positions 10 and 20, add those values, and then overwrite the value at position 30 with their sum.
+
+Opcode 2 works exactly like opcode 1, except it multiplies the two inputs instead of adding them. Again, the three integers after the opcode indicate where the inputs and outputs are, not their values.
+
+Once you're done processing an opcode, move to the next one by stepping forward 4 positions.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="462" y="750" width="360" height="516" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>For example, suppose you have the following program:
+
+1,9,10,3,2,3,11,0,99,30,40,50
+For the purposes of illustration, here is the same program split into multiple lines:
+
+1,9,10,3,
+2,3,11,0,
+99,
+30,40,50
+The first four integers, 1,9,10,3, are at positions 0, 1, 2, and 3. Together, they represent the first opcode (1, addition), the positions of the two inputs (9 and 10), and the position of the output (3). To handle this opcode, you first need to get the values at the input positions: position 9 contains 30, and position 10 contains 40. Add these numbers together to get 70. Then, store this value at the output position; here, the output position (3) is at position 3, so it overwrites itself. Afterward, the program looks like this:
+
+1,9,10,70,
+2,3,11,0,
+99,
+30,40,50
+Step forward 4 positions to reach the next opcode, 2. This opcode works just like the previous, but it multiplies instead of adding. The inputs are at positions 3 and 11; these positions contain 70 and 50 respectively. Multiplying these produces 3500; this is stored at position 0:
+
+3500,9,10,70,
+2,3,11,0,
+99,
+30,40,50
+Stepping forward 4 more positions arrives at opcode 99, halting the program.</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxGuiToolkit.TextBox.TextBox">
+        <Position x="930" y="750" width="324" height="120" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Text>Once you have a working computer, the first step is to restore the gravity assist program (your puzzle input) to the "1202 program alarm" state it had just before the last computer caught fire. To do this, before running the program, replace position 1 with the value 12 and replace position 2 with the value 2. What value is left at position 0 after the program halts?</Text>
+          <Font name="Arial" size="8.25" style="0" />
+          <TextColor name="Black" />
+          <FillColor name="White" />
+          <Shape shape="0" />
+          <Justification Justification="4" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings>
+        <Position x="1662" y="1014" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name>intops (45)</Name>
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Position" source="RecordID: Starting Value=0 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" name="OrderInGroup" source="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Max_Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field name="Abort" source="Formula: if [Value] = 99 then 1 else 0 endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="iterO">
+          <RecordInfo>
+            <Field name="Position" source="RecordID: Starting Value=0" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources)" type="Int64" />
+            <Field description="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" name="OrderInGroup" source="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" type="Int32" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" type="Int64" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Max_Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="sthWrong">
+          <RecordInfo>
+            <Field name="Position" source="RecordID: Starting Value=0 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field description="TextToColumns: Parsed from input" name="Value" source="Formula: if [Position] = 1 then 12&#xA;elseif [Position] = 2 then 2&#xA;else [Value]&#xA;endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" name="OrderInGroup" source="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Max_Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field name="when" size="1073741823" source="Formula: [Engine.IterationNumber] (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings Macro=".\intops.yxmc" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1806" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Position] = 0</Expression>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Position</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-02 08:30:01</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
+              <StartDate>2019-12-02 08:30:01</StartDate>
+              <EndDate>2019-12-02 08:30:01</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Position] = 0</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="Position" source="RecordID: Starting Value=0 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" name="OrderInGroup" source="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Max_Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field name="Abort" source="Formula: if [Value] = 99 then 1 else 0 endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="Position" source="RecordID: Starting Value=0 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" name="OrderInGroup" source="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Max_Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field name="Abort" source="Formula: if [Value] = 99 then 1 else 0 endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="65">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2250" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output</Name>
+          <Abbrev>O</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="66">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="894" y="1170" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input66</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="129" />
+              <Fields>
+                <Field name="combination" />
+                <Field name="noun" />
+                <Field name="verb" />
+                <Field name="Position" />
+                <Field name="Value" />
+                <Field name="OrderInGroup" />
+                <Field name="Group" />
+                <Field name="Max_Group" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>4</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>2</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>2</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>8</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>3</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>9</c>
+                  <c>3</c>
+                  <c>1</c>
+                  <c>3</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>10</c>
+                  <c>4</c>
+                  <c>2</c>
+                  <c>3</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>12</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>4</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>13</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>4</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>4</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>15</c>
+                  <c>3</c>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>5</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>1</c>
+                  <c>1</c>
+                  <c>5</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>18</c>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>5</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>19</c>
+                  <c>19</c>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>6</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>21</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>6</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>22</c>
+                  <c>19</c>
+                  <c>2</c>
+                  <c>6</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>23</c>
+                  <c>23</c>
+                  <c>3</c>
+                  <c>6</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>24</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>7</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>25</c>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>7</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>26</c>
+                  <c>23</c>
+                  <c>2</c>
+                  <c>7</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>27</c>
+                  <c>27</c>
+                  <c>3</c>
+                  <c>7</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>28</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>8</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>29</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>8</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>30</c>
+                  <c>27</c>
+                  <c>2</c>
+                  <c>8</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>31</c>
+                  <c>31</c>
+                  <c>3</c>
+                  <c>8</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>32</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>9</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>33</c>
+                  <c>31</c>
+                  <c>1</c>
+                  <c>9</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>34</c>
+                  <c>10</c>
+                  <c>2</c>
+                  <c>9</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>35</c>
+                  <c>35</c>
+                  <c>3</c>
+                  <c>9</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>36</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>10</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>37</c>
+                  <c>35</c>
+                  <c>1</c>
+                  <c>10</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>38</c>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>10</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>39</c>
+                  <c>39</c>
+                  <c>3</c>
+                  <c>10</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>40</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>11</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>41</c>
+                  <c>39</c>
+                  <c>1</c>
+                  <c>11</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>42</c>
+                  <c>13</c>
+                  <c>2</c>
+                  <c>11</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>43</c>
+                  <c>43</c>
+                  <c>3</c>
+                  <c>11</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>44</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>12</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>45</c>
+                  <c>10</c>
+                  <c>1</c>
+                  <c>12</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>46</c>
+                  <c>43</c>
+                  <c>2</c>
+                  <c>12</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>47</c>
+                  <c>47</c>
+                  <c>3</c>
+                  <c>12</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>48</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>13</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>49</c>
+                  <c>47</c>
+                  <c>1</c>
+                  <c>13</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>50</c>
+                  <c>6</c>
+                  <c>2</c>
+                  <c>13</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>51</c>
+                  <c>51</c>
+                  <c>3</c>
+                  <c>13</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>52</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>14</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>53</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>14</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>54</c>
+                  <c>51</c>
+                  <c>2</c>
+                  <c>14</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>55</c>
+                  <c>55</c>
+                  <c>3</c>
+                  <c>14</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>56</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>15</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>57</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>15</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>58</c>
+                  <c>55</c>
+                  <c>2</c>
+                  <c>15</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>59</c>
+                  <c>59</c>
+                  <c>3</c>
+                  <c>15</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>60</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>16</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>61</c>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>16</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>62</c>
+                  <c>59</c>
+                  <c>2</c>
+                  <c>16</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>63</c>
+                  <c>63</c>
+                  <c>3</c>
+                  <c>16</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>64</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>17</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>65</c>
+                  <c>63</c>
+                  <c>1</c>
+                  <c>17</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>66</c>
+                  <c>9</c>
+                  <c>2</c>
+                  <c>17</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>67</c>
+                  <c>67</c>
+                  <c>3</c>
+                  <c>17</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>68</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>18</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>69</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>18</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>70</c>
+                  <c>67</c>
+                  <c>2</c>
+                  <c>18</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>71</c>
+                  <c>71</c>
+                  <c>3</c>
+                  <c>18</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>72</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>19</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>73</c>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>19</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>74</c>
+                  <c>71</c>
+                  <c>2</c>
+                  <c>19</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>75</c>
+                  <c>75</c>
+                  <c>3</c>
+                  <c>19</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>76</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>20</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>77</c>
+                  <c>75</c>
+                  <c>1</c>
+                  <c>20</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>78</c>
+                  <c>5</c>
+                  <c>2</c>
+                  <c>20</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>79</c>
+                  <c>79</c>
+                  <c>3</c>
+                  <c>20</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>80</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>21</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>81</c>
+                  <c>10</c>
+                  <c>1</c>
+                  <c>21</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>82</c>
+                  <c>79</c>
+                  <c>2</c>
+                  <c>21</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>83</c>
+                  <c>83</c>
+                  <c>3</c>
+                  <c>21</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>84</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>22</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>85</c>
+                  <c>6</c>
+                  <c>1</c>
+                  <c>22</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>86</c>
+                  <c>83</c>
+                  <c>2</c>
+                  <c>22</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>87</c>
+                  <c>87</c>
+                  <c>3</c>
+                  <c>22</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>88</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>23</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>89</c>
+                  <c>13</c>
+                  <c>1</c>
+                  <c>23</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>90</c>
+                  <c>87</c>
+                  <c>2</c>
+                  <c>23</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>91</c>
+                  <c>91</c>
+                  <c>3</c>
+                  <c>23</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>92</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>24</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>93</c>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>24</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>94</c>
+                  <c>91</c>
+                  <c>2</c>
+                  <c>24</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>95</c>
+                  <c>95</c>
+                  <c>3</c>
+                  <c>24</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>96</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>25</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>97</c>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>25</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>98</c>
+                  <c>95</c>
+                  <c>2</c>
+                  <c>25</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>99</c>
+                  <c>99</c>
+                  <c>3</c>
+                  <c>25</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>100</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>26</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>101</c>
+                  <c>99</c>
+                  <c>1</c>
+                  <c>26</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>102</c>
+                  <c>9</c>
+                  <c>2</c>
+                  <c>26</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>103</c>
+                  <c>103</c>
+                  <c>3</c>
+                  <c>26</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>104</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>27</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>105</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>27</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>106</c>
+                  <c>103</c>
+                  <c>2</c>
+                  <c>27</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>107</c>
+                  <c>107</c>
+                  <c>3</c>
+                  <c>27</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>108</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>28</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>109</c>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>28</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>110</c>
+                  <c>107</c>
+                  <c>2</c>
+                  <c>28</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>111</c>
+                  <c>111</c>
+                  <c>3</c>
+                  <c>28</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>112</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>29</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>113</c>
+                  <c>5</c>
+                  <c>1</c>
+                  <c>29</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>114</c>
+                  <c>111</c>
+                  <c>2</c>
+                  <c>29</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>115</c>
+                  <c>115</c>
+                  <c>3</c>
+                  <c>29</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>116</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>30</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>117</c>
+                  <c>115</c>
+                  <c>1</c>
+                  <c>30</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>118</c>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>30</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>119</c>
+                  <c>119</c>
+                  <c>3</c>
+                  <c>30</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>120</c>
+                  <c>1</c>
+                  <c>0</c>
+                  <c>31</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>121</c>
+                  <c>9</c>
+                  <c>1</c>
+                  <c>31</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>122</c>
+                  <c>119</c>
+                  <c>2</c>
+                  <c>31</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>123</c>
+                  <c>0</c>
+                  <c>3</c>
+                  <c>31</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>124</c>
+                  <c>99</c>
+                  <c>0</c>
+                  <c>32</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>125</c>
+                  <c>2</c>
+                  <c>1</c>
+                  <c>32</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>126</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>32</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>127</c>
+                  <c>14</c>
+                  <c>3</c>
+                  <c>32</c>
+                  <c>33</c>
+                </r>
+                <r>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>128</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>33</c>
+                  <c>33</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="67">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1062" y="1170" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[combination] = [Engine.IterationNumber]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>combination</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-02 08:38:45</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>itera</Operand>
+              <StartDate>2019-12-02 08:38:45</StartDate>
+              <EndDate>2019-12-02 08:38:45</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[combination] = [Engine.IterationNumber]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="68">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1350" y="1158" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [Position] = 1 then noun &#xA;elseif [Position] = 2 then verb &#xA;else [Value]&#xA;endif" field="Value" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Value = if [Position] = 1 then noun 
+elseif [Position] = 2 then verb 
+else [Valu...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="Formula: if [Position] = 1 then noun &#xA;elseif [Position] = 2 then verb &#xA;else [Value]&#xA;endif" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="69">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1470" y="1014" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="combination" selected="False" />
+            <SelectField field="noun" selected="False" />
+            <SelectField field="verb" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="Formula: if [Position] = 1 then noun &#xA;elseif [Position] = 2 then verb &#xA;else [Value]&#xA;endif" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="70">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1662" y="1158" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Position" selected="False" />
+            <SelectField field="Value" selected="False" />
+            <SelectField field="OrderInGroup" selected="False" />
+            <SelectField field="Group" selected="False" />
+            <SelectField field="Max_Group" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="71">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sample.Sample">
+        <Position x="1470" y="1158" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>First</Mode>
+          <N>1</N>
+          <GroupFields orderChanged="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>First 1</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="Formula: if [Position] = 1 then noun &#xA;elseif [Position] = 2 then verb &#xA;else [Value]&#xA;endif" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSample" />
+    </Node>
+    <Node ToolID="72">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="1950" y="1002" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Position" source="RecordID: Starting Value=0 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" name="OrderInGroup" source="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Max_Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field name="Abort" source="Formula: if [Value] = 99 then 1 else 0 endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Bool" />
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="73">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1950" y="1134" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [Value] = 19690720 then 1 else 0 endif" field="Abort" size="1" type="Bool" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Abort = if [Value] = 19690720 then 1 else 0 endif
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="Position" source="RecordID: Starting Value=0 (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field name="Value" source="Formula: (Multiple Sources) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif" name="OrderInGroup" source="Formula: IF &#xA;isnull([Row-1:OrderInGroup]) then 0 else&#xA;if&#xA;[Row-1:OrderInGroup] = 3 then 0 else [Row-1:OrderInGroup]+1 endif&#xA;endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int32" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field description="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif" name="Max_Group" source="Formula: if [OrderInGroup] = 0 then &#xA;if isnull([Row-1:Group]) then 1 else&#xA;[Row-1:Group] + 1 endif&#xA;&#xA; else [Row-1:Group] endif (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro) (BatchMacro)" type="Int64" />
+            <Field name="Abort" source="Formula: if [Value] = 19690720 then 1 else 0 endif" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="74">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="2118" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_Position" selected="False" rename="Source_Position" input="Source_" />
+                <SelectField field="Source_Value" selected="False" rename="Source_Value" input="Source_" />
+                <SelectField field="Source_OrderInGroup" selected="False" rename="Source_OrderInGroup" input="Source_" />
+                <SelectField field="Source_Group" selected="False" rename="Source_Group" input="Source_" />
+                <SelectField field="Source_Max_Group" selected="False" rename="Source_Max_Group" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+            <Field name="Abort" source="Formula: if [Value] = 19690720 then 1 else 0 endif" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="75">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="2250" y="1242" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Abort] = 1
+||
+[Engine.IterationNumber] &gt; 9999</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>IsTrue</Operator>
+            <Field>Abort</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-02 08:44:22</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2019-12-02 08:44:22</StartDate>
+              <EndDate>2019-12-02 08:44:22</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Abort] = 1
+||
+[Engine.IterationNumber] &gt; 9999</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+            <Field name="Abort" source="Formula: if [Value] = 19690720 then 1 else 0 endif" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+            <Field name="Abort" source="Formula: if [Value] = 19690720 then 1 else 0 endif" type="Bool" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="76">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2442" y="1302" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iterO</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="77">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2358" y="1218" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Last</Name>
+          <Abbrev>L</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="78">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="2346" y="1266" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Abort" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="combination" source="TextInput:" type="Byte" />
+            <Field name="noun" source="TextInput:" type="Byte" />
+            <Field name="verb" source="TextInput:" type="Byte" />
+            <Field name="Position" source="TextInput:" type="Byte" />
+            <Field name="Value" source="TextInput:" type="Byte" />
+            <Field name="OrderInGroup" source="TextInput:" type="Byte" />
+            <Field name="Group" source="TextInput:" type="Byte" />
+            <Field name="Max_Group" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="72" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="70" Connection="Output" />
+      <Destination ToolID="72" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="73" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="67" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="66" Connection="Output" />
+      <Destination ToolID="74" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="73" Connection="Output" />
+      <Destination ToolID="74" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="67" Connection="True" />
+      <Destination ToolID="68" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="69" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="68" Connection="Output" />
+      <Destination ToolID="71" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="69" Connection="Output" />
+      <Destination ToolID="54" Connection="Input1" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="71" Connection="Output" />
+      <Destination ToolID="70" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="72" Connection="Output" />
+      <Destination ToolID="65" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="74" Connection="Output" />
+      <Destination ToolID="75" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="True" />
+      <Destination ToolID="77" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="75" Connection="False" />
+      <Destination ToolID="78" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="78" Connection="Output" />
+      <Destination ToolID="76" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (76)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (77)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="False" />
+      <Name>Day1-Puzzle1</Name>
+      <Description>David's take on the Advent of Code 2019 using Alteryx</Description>
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author>Ben Moss</Author>
+      <Company>The Information Lab</Company>
+      <Copyright />
+      <DescriptionLink actual="https://github.com/dsmdavid/AdventCode2019" displayed="GitHub" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (57)</Name>
+          <ToolId value="57" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (65)</Description>
+              <Name>Macro Output (65)</Name>
+              <ToolId value="65" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (66)</Name>
+              <ToolId value="66" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (76)</Description>
+              <Name>Macro Output (76)</Name>
+              <ToolId value="76" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (77)</Description>
+              <Name>Macro Output (77)</Name>
+              <ToolId value="77" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input66</Input>
+        <Output>iterO</Output>
+        <IterationLimit value="10000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="54" Selected="True" />
+        <Tool ToolId="65" Selected="True" />
+        <Tool ToolId="76" Selected="True" />
+        <Tool ToolId="77" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
