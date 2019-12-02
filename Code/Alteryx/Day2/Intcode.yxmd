@@ -431,7 +431,7 @@ if isnull([Row-1:Group]) then 1 e...</DefaultAnnotationText>
       </Properties>
       <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMultiRowFormula" />
     </Node>
-    <Node ToolID="54">
+    <Node ToolID="58">
       <GuiSettings>
         <Position x="1914" y="1002" />
       </GuiSettings>
@@ -451,7 +451,7 @@ if isnull([Row-1:Group]) then 1 e...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_34176_f8f2d978e0394001b8041e2ddb7c3548_\Engine_33244_8179b423413e4b89a69c65b4c7c988e6_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9588_0b6b9c28fdce4b9c83da61ef81b13078_\Engine_33244_12c97e20e91f451da14e92086cbe94ef_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -479,7 +479,7 @@ if isnull([Row-1:Group]) then 1 e...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_34176_f8f2d978e0394001b8041e2ddb7c3548_\Engine_33244_a73173269f294bbaa2b383437dc7658a_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_9588_0b6b9c28fdce4b9c83da61ef81b13078_\Engine_33244_b95866bac16346dc9e4f21a13eb88d94_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -525,9 +525,6 @@ if isnull([Row-1:Group]) then 1 e...</DefaultAnnotationText>
           <DefaultAnnotationText>Puzzle2-Input01.txt</DefaultAnnotationText>
           <Left value="False" />
         </Annotation>
-        <Dependencies>
-          <Implicit />
-        </Dependencies>
         <MetaInfo connection="Output">
           <RecordInfo>
             <Field name="Field_1" size="1000000" source="File: C:\Users\DavidSM\Dropbox\python\AdventCode2019\Inputs\Day2\Puzzle2-Input01.txt" type="V_String" />
@@ -690,11 +687,11 @@ endi...</DefaultAnnotationText>
       <Destination ToolID="53" Connection="Source" />
     </Connection>
     <Connection>
-      <Origin ToolID="54" Connection="Output" />
+      <Origin ToolID="58" Connection="Output" />
       <Destination ToolID="46" Connection="Input" />
     </Connection>
     <Connection>
-      <Origin ToolID="54" Connection="iterO" />
+      <Origin ToolID="58" Connection="iterO" />
       <Destination ToolID="47" Connection="Input" />
     </Connection>
     <Connection>
@@ -711,7 +708,7 @@ endi...</DefaultAnnotationText>
     </Connection>
     <Connection>
       <Origin ToolID="53" Connection="Output" />
-      <Destination ToolID="54" Connection="Input1" />
+      <Destination ToolID="58" Connection="Input1" />
     </Connection>
     <Connection>
       <Origin ToolID="53" Connection="Output" />
