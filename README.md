@@ -14,3 +14,4 @@ I will try to solve the puzzles in Alteryx and in Python.
 ## Index
 
 1. Fuel Needed -- [Alteryx](Code/Alteryx/Day1) and [Python](Code/Python/Day1/Day1.ipynb)  
+2. Intcode -- [Alteryx](Code/Alteryx/Day2) and [Python](Code/Python/Day2/Day2.ipynb)  

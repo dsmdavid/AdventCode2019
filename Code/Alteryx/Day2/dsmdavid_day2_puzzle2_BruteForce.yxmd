@@ -116,7 +116,7 @@
           <Expression_Init>0</Expression_Init>
           <Expression_Cond>noun &lt;= 99</Expression_Cond>
           <Expression_Loop>noun + 1</Expression_Loop>
-          <RecordCount value="0" />
+          <RecordCount value="100" />
         </Configuration>
         <Annotation DisplayMode="0">
           <Name />
@@ -416,7 +416,7 @@ if isnull([Row-1:Group]) then 1 e...</DefaultAnnotationText>
       </GuiSettings>
       <Properties>
         <Configuration>
-          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_10396_738123fffcae4a03a911b657a29b0e0c_\Engine_33244_20ab7767ecac4e30a278c836283ef6ef_.yxdb</TempFile>
+          <TempFile>C:\ProgramData\Alteryx\Engine\Engine_23808_1eb1156754eb4563bf34386a28d6cdf0_\Engine_33244_21734730be3b4f5eb51b86eb8605b6c0_.yxdb</TempFile>
           <TempFileDataProfiling />
           <Layout>
             <ViewMode>Single</ViewMode>
@@ -494,9 +494,9 @@ verb - Ascending</DefaultAnnotationText>
               <PeriodType>
               </PeriodType>
               <PeriodCount>0</PeriodCount>
+              <Operand>0</Operand>
               <StartDate>2019-12-02 17:04:40</StartDate>
               <EndDate>2019-12-02 17:04:40</EndDate>
-              <Operand>0</Operand>
             </Operands>
           </Simple>
         </Configuration>
