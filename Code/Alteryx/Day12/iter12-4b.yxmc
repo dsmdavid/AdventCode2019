@@ -1,0 +1,751 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2019.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="54" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input1</Name>
+          <Abbrev />
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="RecordID" />
+                <Field name="X" />
+                <Field name="Y" />
+                <Field name="Z" />
+                <Field name="vX" />
+                <Field name="vY" />
+                <Field name="vZ" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>1</c>
+                  <c>-1</c>
+                  <c>0</c>
+                  <c>2</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>2</c>
+                  <c>2</c>
+                  <c>-10</c>
+                  <c>-7</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>3</c>
+                  <c>4</c>
+                  <c>-8</c>
+                  <c>8</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+                <r>
+                  <c>4</c>
+                  <c>3</c>
+                  <c>5</c>
+                  <c>-1</c>
+                  <c>0</c>
+                  <c>0</c>
+                  <c>0</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="TextInput:" type="Byte" />
+            <Field name="X" source="TextInput:" type="Int16" />
+            <Field name="Y" source="TextInput:" type="Int16" />
+            <Field name="Z" source="TextInput:" type="Int16" />
+            <Field name="vX" source="TextInput:" type="Byte" />
+            <Field name="vY" source="TextInput:" type="Byte" />
+            <Field name="vZ" source="TextInput:" type="Byte" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="282" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_RecordID" selected="True" rename="Source_RecordID" input="Source_" />
+                <SelectField field="Source_X" selected="True" rename="X2" input="Source_" />
+                <SelectField field="Source_Y" selected="True" rename="Y2" input="Source_" />
+                <SelectField field="Source_Z" selected="True" rename="Z2" input="Source_" />
+                <SelectField field="Source_vX" selected="False" input="Source_" />
+                <SelectField field="Source_vY" selected="False" input="Source_" />
+                <SelectField field="Source_vZ" selected="False" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X" source="TextInput:" type="Int64" />
+            <Field name="Y" source="TextInput:" type="Int64" />
+            <Field name="Z" source="TextInput:" type="Int64" />
+            <Field name="vX" source="TextInput:" type="Int64" />
+            <Field name="vY" source="TextInput:" type="Int64" />
+            <Field name="vZ" source="TextInput:" type="Int64" />
+            <Field name="Source_RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X2" source="TextInput:" type="Int64" />
+            <Field name="Y2" source="TextInput:" type="Int64" />
+            <Field name="Z2" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="474" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="if [x] &lt; [X2] then 1 elseif x == [X2] then 0 else -1 endif" field="DifX" size="8" type="Int64" />
+            <FormulaField expression="if [y] &lt; [Y2] then 1 elseif y == [y2] then 0 else -1 endif" field="difY" size="8" type="Int64" />
+            <FormulaField expression="if [z] &lt; [z2] then 1 elseif z == [z2] then 0 else -1 endif" field="DifZ" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DifX = if [x] &lt; [X2] then 1 elseif x == [X2] then 0 else -1 endif
+difY = if [y] ...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X" source="TextInput:" type="Int64" />
+            <Field name="Y" source="TextInput:" type="Int64" />
+            <Field name="Z" source="TextInput:" type="Int64" />
+            <Field name="vX" source="TextInput:" type="Int64" />
+            <Field name="vY" source="TextInput:" type="Int64" />
+            <Field name="vZ" source="TextInput:" type="Int64" />
+            <Field name="Source_RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X2" source="TextInput:" type="Int64" />
+            <Field name="Y2" source="TextInput:" type="Int64" />
+            <Field name="Z2" source="TextInput:" type="Int64" />
+            <Field name="DifX" source="Formula: if [x] &lt; [X2] then 1 elseif x ..." type="Int64" />
+            <Field name="difY" source="Formula: if [y] &lt; [Y2] then 1 elseif y ..." type="Int64" />
+            <Field name="DifZ" source="Formula: if [z] &lt; [z2] then 1 elseif z ..." type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="570" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="X" action="GroupBy" rename="X" />
+            <SummarizeField field="Y" action="GroupBy" rename="Y" />
+            <SummarizeField field="Z" action="GroupBy" rename="Z" />
+            <SummarizeField field="DifX" action="Sum" rename="Sum_DifX" />
+            <SummarizeField field="difY" action="Sum" rename="Sum_difY" />
+            <SummarizeField field="DifZ" action="Sum" rename="Sum_DifZ" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="Summarize: GroupBy - RecordID" type="V_String" />
+            <Field name="X" source="Summarize: GroupBy - X" type="Int64" />
+            <Field name="Y" source="Summarize: GroupBy - Y" type="Int64" />
+            <Field name="Z" source="Summarize: GroupBy - Z" type="Int64" />
+            <Field name="Sum_DifX" source="Summarize: Sum - DifX" type="Int64" />
+            <Field name="Sum_difY" source="Summarize: Sum - difY" type="Int64" />
+            <Field name="Sum_DifZ" source="Summarize: Sum - DifZ" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+            <Field field="Z" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="762" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[vX] +[Sum_DifX]" field="vX" size="8" type="Int64" />
+            <FormulaField expression="[vY]+[Sum_difY]" field="vY" size="1" type="Byte" />
+            <FormulaField expression="[vZ]+[Sum_DifZ]" field="vZ" size="1" type="Byte" />
+            <FormulaField expression="X + [Sum_DifX]" field="X" size="8" type="Int64" />
+            <FormulaField expression="[Y] + [Sum_difY]" field="Y" size="8" type="Int64" />
+            <FormulaField expression="[Z] + [Sum_DifZ]" field="Z" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>vX = [vX] +[Sum_DifX]
+vY = [vY]+[Sum_difY]
+vZ = [vZ]+[Sum_DifZ]
+X = X + [Sum_Dif...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="Summarize: GroupBy - RecordID" type="V_String" />
+            <Field name="X" source="Formula: X + [Sum_DifX]" type="Int64" />
+            <Field name="Y" source="Formula: [Y] + [Sum_difY]" type="Int64" />
+            <Field name="Z" source="Formula: [Z] + [Sum_DifZ]" type="Int64" />
+            <Field name="Sum_DifX" source="Summarize: Sum - DifX" type="Int64" />
+            <Field name="Sum_difY" source="Summarize: Sum - difY" type="Int64" />
+            <Field name="Sum_DifZ" source="Summarize: Sum - DifZ" type="Int64" />
+            <Field name="vX" source="Formula: [vX] +[Sum_DifX]" type="Int64" />
+            <Field name="vY" source="Formula: [vY]+[Sum_difY]" type="Int64" />
+            <Field name="vZ" source="Formula: [vZ]+[Sum_DifZ]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="858" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Sum_DifX" selected="False" />
+            <SelectField field="Sum_difY" selected="False" />
+            <SelectField field="Sum_DifZ" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="Summarize: GroupBy - RecordID" type="V_String" />
+            <Field name="X" source="Formula: X + [Sum_DifX]" type="Int64" />
+            <Field name="Y" source="Formula: [Y] + [Sum_difY]" type="Int64" />
+            <Field name="Z" source="Formula: [Z] + [Sum_DifZ]" type="Int64" />
+            <Field name="vX" source="Formula: [vX] +[Sum_DifX]" type="Int64" />
+            <Field name="vY" source="Formula: [vY]+[Sum_difY]" type="Int64" />
+            <Field name="vZ" source="Formula: [vZ]+[Sum_DifZ]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="150" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" type="V_String" size="3" />
+            <SelectField field="X" selected="True" type="Int64" size="8" />
+            <SelectField field="Y" selected="True" type="Int64" size="8" />
+            <SelectField field="Z" selected="True" type="Int64" size="8" />
+            <SelectField field="vX" selected="True" type="Int64" size="8" />
+            <SelectField field="vY" selected="True" type="Int64" size="8" />
+            <SelectField field="vZ" selected="True" type="Int64" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X" source="TextInput:" type="Int64" />
+            <Field name="Y" source="TextInput:" type="Int64" />
+            <Field name="Z" source="TextInput:" type="Int64" />
+            <Field name="vX" source="TextInput:" type="Int64" />
+            <Field name="vY" source="TextInput:" type="Int64" />
+            <Field name="vZ" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1098" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="X" selected="True" />
+            <SelectField field="Y" selected="True" />
+            <SelectField field="Z" selected="True" />
+            <SelectField field="vX" selected="True" />
+            <SelectField field="vY" selected="True" />
+            <SelectField field="vZ" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="Summarize: GroupBy - RecordID" type="V_String" />
+            <Field name="X" source="Formula: X + [Sum_DifX]" type="Int64" />
+            <Field name="Y" source="Formula: [Y] + [Sum_difY]" type="Int64" />
+            <Field name="Z" source="Formula: [Z] + [Sum_DifZ]" type="Int64" />
+            <Field name="vX" source="Formula: [vX] +[Sum_DifX]" type="Int64" />
+            <Field name="vY" source="Formula: [vY]+[Sum_difY]" type="Int64" />
+            <Field name="vZ" source="Formula: [vZ]+[Sum_DifZ]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1410" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iterOutput</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="1410" y="90" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output19</Name>
+          <Abbrev>M</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1218" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="iteration" size="4" type="Int32" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[iteration = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="Summarize: GroupBy - RecordID" type="V_String" />
+            <Field name="X" source="Formula: X + [Sum_DifX]" type="Int64" />
+            <Field name="Y" source="Formula: [Y] + [Sum_difY]" type="Int64" />
+            <Field name="Z" source="Formula: [Z] + [Sum_DifZ]" type="Int64" />
+            <Field name="vX" source="Formula: [vX] +[Sum_DifX]" type="Int64" />
+            <Field name="vY" source="Formula: [vY]+[Sum_difY]" type="Int64" />
+            <Field name="vZ" source="Formula: [vZ]+[Sum_DifZ]" type="Int64" />
+            <Field name="iteration" source="Formula: [Engine.IterationNumber]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="378" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[RecordID] != [Source_RecordID]</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] != [Source_RecordID]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X" source="TextInput:" type="Int64" />
+            <Field name="Y" source="TextInput:" type="Int64" />
+            <Field name="Z" source="TextInput:" type="Int64" />
+            <Field name="vX" source="TextInput:" type="Int64" />
+            <Field name="vY" source="TextInput:" type="Int64" />
+            <Field name="vZ" source="TextInput:" type="Int64" />
+            <Field name="Source_RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X2" source="TextInput:" type="Int64" />
+            <Field name="Y2" source="TextInput:" type="Int64" />
+            <Field name="Z2" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X" source="TextInput:" type="Int64" />
+            <Field name="Y" source="TextInput:" type="Int64" />
+            <Field name="Z" source="TextInput:" type="Int64" />
+            <Field name="vX" source="TextInput:" type="Int64" />
+            <Field name="vY" source="TextInput:" type="Int64" />
+            <Field name="vZ" source="TextInput:" type="Int64" />
+            <Field name="Source_RecordID" size="3" source="TextInput:" type="V_String" />
+            <Field name="X2" source="TextInput:" type="Int64" />
+            <Field name="Y2" source="TextInput:" type="Int64" />
+            <Field name="Z2" source="TextInput:" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1110" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="RecordID" selected="True" />
+            <SelectField field="X" selected="True" />
+            <SelectField field="Y" selected="True" />
+            <SelectField field="Z" selected="True" />
+            <SelectField field="vX" selected="True" />
+            <SelectField field="vY" selected="True" />
+            <SelectField field="vZ" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="Summarize: GroupBy - RecordID" type="V_String" />
+            <Field name="X" source="Formula: X + [Sum_DifX]" type="Int64" />
+            <Field name="Y" source="Formula: [Y] + [Sum_difY]" type="Int64" />
+            <Field name="Z" source="Formula: [Z] + [Sum_DifZ]" type="Int64" />
+            <Field name="vX" source="Formula: [vX] +[Sum_DifX]" type="Int64" />
+            <Field name="vY" source="Formula: [vY]+[Sum_difY]" type="Int64" />
+            <Field name="vZ" source="Formula: [vZ]+[Sum_DifZ]" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.FindReplace.FindReplace">
+        <Position x="666" y="126" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldFind>RecordID</FieldFind>
+          <FieldSearch>RecordID</FieldSearch>
+          <ReplaceFoundField>RecordID</ReplaceFoundField>
+          <FindMode>FindAny</FindMode>
+          <NoCase value="False" />
+          <MatchWholeWord value="False" />
+          <ReplaceMode>Append</ReplaceMode>
+          <ReplaceMultipleFound value="True" />
+          <ReplaceAppendFields>
+            <Field field="vX" />
+            <Field field="vY" />
+            <Field field="vZ" />
+          </ReplaceAppendFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" size="3" source="Summarize: GroupBy - RecordID" type="V_String" />
+            <Field name="X" source="Summarize: GroupBy - X" type="Int64" />
+            <Field name="Y" source="Summarize: GroupBy - Y" type="Int64" />
+            <Field name="Z" source="Summarize: GroupBy - Z" type="Int64" />
+            <Field name="Sum_DifX" source="Summarize: Sum - DifX" type="Int64" />
+            <Field name="Sum_difY" source="Summarize: Sum - difY" type="Int64" />
+            <Field name="Sum_DifZ" source="Summarize: Sum - DifZ" type="Int64" />
+            <Field name="vX" source="TextInput:" type="Int64" />
+            <Field name="vY" source="TextInput:" type="Int64" />
+            <Field name="vZ" source="TextInput:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="X" order="Asc" />
+            <Field field="Y" order="Asc" />
+            <Field field="Z" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFindReplace" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="21" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="23" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="23" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="2" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="2" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="True" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (1)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (17)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (19)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>iter12-4b</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions />
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (13)</Name>
+          <ToolId value="13" />
+          <Questions>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description />
+              <Name>Macro Input (1)</Name>
+              <ToolId value="1" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (17)</Description>
+              <Name>Macro Output (17)</Name>
+              <ToolId value="17" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (19)</Description>
+              <Name>Macro Output (19)</Name>
+              <ToolId value="19" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input1</Input>
+        <Output>iterOutput</Output>
+        <IterationLimit value="15000" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools>
+        <Tool ToolId="1" Selected="True" />
+        <Tool ToolId="17" Selected="True" />
+        <Tool ToolId="19" Selected="True" />
+      </Wiz_OpenOutputTools>
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>

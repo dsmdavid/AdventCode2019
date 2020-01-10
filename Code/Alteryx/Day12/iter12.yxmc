@@ -1,0 +1,1246 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<AlteryxDocument yxmdVer="2018.4">
+  <Nodes>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="409.5" y="227.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>moon</Field>
+          <RegExExpression value="\&lt;x=(.*?),\sy=(.*?),\sz=(.*?)\&gt;" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="X" type="Int64" size="8" />
+            <Field field="Y" type="Int64" size="8" />
+            <Field field="Z" type="Int64" size="8" />
+          </ParseComplex>
+          <Match>
+            <Field>moon_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+\&lt;x=(.*?),\sy=(.*?),\sz=(.*...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="velocity" size="15" source="TextInput:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="X" source="RegEx: Parsed from moon" type="Int64" />
+            <Field description="RegEx: Parsed from moon" name="Y" source="RegEx: Parsed from moon" type="Int64" />
+            <Field description="RegEx: Parsed from moon" name="Z" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RegEx.RegEx">
+        <Position x="422.5" y="760.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>velocity</Field>
+          <RegExExpression value="\&lt;x=(.*?),\sy=(.*?),\sz=(.*?)\&gt;" />
+          <CaseInsensitve value="True" />
+          <Method>ParseComplex</Method>
+          <Replace expression="">
+            <CopyUnmatched value="True" />
+          </Replace>
+          <ParseSimple>
+            <SplitToRows value="False" />
+            <RootName />
+            <NumFields value="3" />
+            <ErrorHandling>Warn</ErrorHandling>
+          </ParseSimple>
+          <ParseComplex>
+            <Field field="X" type="Int64" size="8" />
+            <Field field="Y" type="Int64" size="8" />
+            <Field field="Z" type="Int64" size="8" />
+          </ParseComplex>
+          <Match>
+            <Field>moon_Matched</Field>
+            <ErrorUnmatched value="False" />
+          </Match>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Parse:
+\&lt;x=(.*?),\sy=(.*?),\sz=(.*...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="velocity" size="15" source="TextInput:" type="String" />
+            <Field description="RegEx: Parsed from velocity" name="X" source="RegEx: Parsed from velocity" type="Int64" />
+            <Field description="RegEx: Parsed from velocity" name="Y" source="RegEx: Parsed from velocity" type="Int64" />
+            <Field description="RegEx: Parsed from velocity" name="Z" source="RegEx: Parsed from velocity" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRegEx" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.RecordID.RecordID">
+        <Position x="253.5" y="227.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FieldName>RecordID</FieldName>
+          <StartValue>1</StartValue>
+          <FieldType>Int32</FieldType>
+          <FieldSize>6</FieldSize>
+          <Position>0</Position>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="velocity" size="15" source="TextInput:" type="String" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxRecordID" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AppendFields.AppendFields">
+        <Position x="669.5" y="513.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <CartesianMode>Error</CartesianMode>
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Source_RecordID" selected="True" rename="Source_RecordID" input="Source_" />
+                <SelectField field="Source_moon" selected="False" rename="Source_moon" input="Source_" />
+                <SelectField field="Source_Name" selected="True" rename="Source_Name" input="Source_" />
+                <SelectField field="Source_Value" selected="True" rename="Source_Value" input="Source_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="Source_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Source_Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Source_Value" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAppendFields" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="773.5" y="513.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[RecordID] != [Source_RecordID]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>RecordID</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-12 12:58:13</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-12 12:58:13</StartDate>
+              <EndDate>2019-12-12 12:58:13</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[RecordID] != [Source_RecordID]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="Source_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Source_Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Source_Value" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="Source_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Source_Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Source_Value" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="526.5" y="513.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="RecordID" />
+            <Field field="moon" />
+          </KeyFields>
+          <DataFields>
+            <Field field="RecordID" selected="False" />
+            <Field field="moon" selected="False" />
+            <Field field="velocity" selected="False" />
+            <Field field="X" selected="True" />
+            <Field field="Y" selected="True" />
+            <Field field="Z" selected="True" />
+            <Field field="*Unknown" selected="False" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="890.5" y="513.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Name] = [Source_Name]</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>Name</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-12 12:59:33</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-12 12:59:33</StartDate>
+              <EndDate>2019-12-12 12:59:33</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Name] = [Source_Name]</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="Source_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Source_Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Source_Value" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="Source_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Source_Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Source_Value" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="994.5" y="513.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="Source_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Source_Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Source_Value" source="RegEx: Parsed from moon" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1098.5" y="513.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="IF [Value] = [Source_Value] then 0 &#xA;elseif [Value] &lt; [Source_Value] then 1&#xA;else -1&#xA;endif" field="DIF" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>DIF = IF [Value] = [Source_Value] then 0 
+elseif [Value] &lt; [Source_Value] then 1...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="Source_RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Source_Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from moon" name="Source_Value" source="RegEx: Parsed from moon" type="Int64" />
+            <Field name="DIF" source="Formula: IF [Value] = [Source_Value] then 0 &#xA;elseif [Value] &lt; [Source_Value] then 1&#xA;else -1&#xA;endif" type="Int64" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="1267.5" y="513.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="RecordID" action="GroupBy" rename="RecordID" />
+            <SummarizeField field="Value" action="GroupBy" rename="Value" />
+            <SummarizeField field="Name" action="GroupBy" rename="Name" />
+            <SummarizeField field="DIF" action="Sum" rename="Sum_DIF" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Name" size="1" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Sum_DIF" source="Summarize: Sum - DIF" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+            <Field field="Value" order="Asc" />
+            <Field field="Name" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Transpose.Transpose">
+        <Position x="578.5" y="760.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ErrorWarn>Warn</ErrorWarn>
+          <KeyFields>
+            <Field field="RecordID" />
+          </KeyFields>
+          <DataFields>
+            <Field field="RecordID" selected="False" />
+            <Field field="moon" selected="False" />
+            <Field field="velocity" selected="False" />
+            <Field field="X" selected="True" />
+            <Field field="Y" selected="True" />
+            <Field field="Z" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </DataFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from velocity" name="Value" source="RegEx: Parsed from velocity" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTranspose" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1423.5" y="526.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+            <Field field="Name" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+            <Field field="Name" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_RecordID" selected="False" rename="Right_RecordID" input="Right_" />
+                <SelectField field="Right_Name" selected="False" rename="Right_Name" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Name" size="1" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Sum_DIF" source="Summarize: Sum - DIF" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Name" size="1" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Sum_DIF" source="Summarize: Sum - DIF" type="Int64" />
+            <Field description="RegEx: Parsed from velocity" name="v" source="RegEx: Parsed from velocity" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+            <Field field="Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from velocity" name="v" source="RegEx: Parsed from velocity" type="Int64" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+            <Field field="Name" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="656.5" y="760.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Value" selected="True" rename="v" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="RecordID: Starting Value=1" type="Int32" />
+            <Field name="Name" size="1" source="Transpose:" type="String" />
+            <Field description="RegEx: Parsed from velocity" name="v" source="RegEx: Parsed from velocity" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1514.5" y="526.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Sum_DIF] + [v]" field="UpdatedVelocity" size="8" type="Int64" />
+            <FormulaField expression="[Value] + [UpdatedVelocity]" field="UpdatedePosition" size="8" type="Int64" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>UpdatedVelocity = [Sum_DIF] + [v]
+UpdatedePosition = [Value] + [UpdatedVelocity]...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Name" size="1" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Sum_DIF" source="Summarize: Sum - DIF" type="Int64" />
+            <Field description="RegEx: Parsed from velocity" name="v" source="RegEx: Parsed from velocity" type="Int64" />
+            <Field name="UpdatedVelocity" source="Formula: [Sum_DIF] + [v]" type="Int64" />
+            <Field name="UpdatedePosition" source="Formula: [Value] + [UpdatedVelocity]" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+            <Field field="Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1605.5" y="448.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="RecordID" />
+          </GroupFields>
+          <HeaderField field="Name" />
+          <DataField field="UpdatedVelocity" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="X" source="CrossTab:Header:Name:X:Sum:" type="Int64" />
+            <Field name="Y" source="CrossTab:Header:Name:Y:Sum:" type="Int64" />
+            <Field name="Z" source="CrossTab:Header:Name:Z:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.CrossTab.CrossTab">
+        <Position x="1592.5" y="591.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <GroupFields>
+            <Field field="RecordID" />
+          </GroupFields>
+          <HeaderField field="Name" />
+          <DataField field="UpdatedePosition" />
+          <Methods>
+            <Method method="Sum" />
+          </Methods>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="X" source="CrossTab:Header:Name:X:Sum:" type="Int64" />
+            <Field name="Y" source="CrossTab:Header:Name:Y:Sum:" type="Int64" />
+            <Field name="Z" source="CrossTab:Header:Name:Z:Sum:" type="Int64" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxCrossTab" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1709.5" y="591.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" field="moon" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[moon = "<x="+ToString([X])+", y="+ToString([Y])+", z="+ToString([Z])+">"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="X" source="CrossTab:Header:Name:X:Sum:" type="Int64" />
+            <Field name="Y" source="CrossTab:Header:Name:Y:Sum:" type="Int64" />
+            <Field name="Z" source="CrossTab:Header:Name:Z:Sum:" type="Int64" />
+            <Field name="moon" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1709.5" y="448.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" field="velocity" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[velocity = "<x="+ToString([X])+", y="+ToString([Y])+", z="+ToString([Z])+">"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="X" source="CrossTab:Header:Name:X:Sum:" type="Int64" />
+            <Field name="Y" source="CrossTab:Header:Name:Y:Sum:" type="Int64" />
+            <Field name="Z" source="CrossTab:Header:Name:Z:Sum:" type="Int64" />
+            <Field name="velocity" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="Asc" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1852.5" y="539.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="RecordID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_RecordID" selected="False" input="Left_" />
+                <SelectField field="Left_X" selected="False" input="Left_" />
+                <SelectField field="Left_Y" selected="False" input="Left_" />
+                <SelectField field="Left_Z" selected="False" input="Left_" />
+                <SelectField field="Right_RecordID" selected="False" input="Right_" />
+                <SelectField field="Right_X" selected="False" input="Right_" />
+                <SelectField field="Right_Y" selected="False" input="Right_" />
+                <SelectField field="Right_Z" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Left">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="velocity" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+        <MetaInfo connection="Join">
+          <RecordInfo>
+            <Field name="velocity" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+            <Field name="moon" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="Right">
+          <RecordInfo>
+            <Field name="RecordID" source="CrossTab:Group:Sum:" type="Int32" />
+            <Field name="moon" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+          <SortInfo noProgress="True">
+            <Field field="RecordID" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.Tab.Tab">
+        <Position x="0" y="0" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2086.5" y="539.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>iterOut</Name>
+          <Abbrev>i</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="2008.5" y="695.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="[Engine.IterationNumber]" field="Iteration" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Iteration = [Engine.IterationNumber]
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="RecordID" source="Summarize: GroupBy - RecordID" type="Int32" />
+            <Field description="RegEx: Parsed from moon" name="Value" source="Summarize: GroupBy - Value" type="Int64" />
+            <Field name="Name" size="1" source="Summarize: GroupBy - Name" type="String" />
+            <Field name="Sum_DIF" source="Summarize: Sum - DIF" type="Int64" />
+            <Field description="RegEx: Parsed from velocity" name="v" source="RegEx: Parsed from velocity" type="Int64" />
+            <Field name="UpdatedVelocity" source="Formula: [Sum_DIF] + [v]" type="Int64" />
+            <Field name="UpdatedePosition" source="Formula: [Value] + [UpdatedVelocity]" type="Int64" />
+            <Field name="Iteration" size="1073741823" source="Formula: [Engine.IterationNumber]" type="V_WString" />
+          </RecordInfo>
+          <SortInfo>
+            <Field field="RecordID" order="" />
+            <Field field="Name" order="" />
+          </SortInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroOutput.MacroOutput">
+        <Position x="2099.5" y="695.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Name>Output22</Name>
+          <Abbrev>o</Abbrev>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroOutput" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.MacroInput.MacroInput">
+        <Position x="162.5" y="227.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <UseFileInput value="False" />
+          <Name>Input</Name>
+          <Abbrev>I</Abbrev>
+          <ShowFieldMap value="False" />
+          <Optional value="False" />
+          <TextInput>
+            <Configuration>
+              <NumRows value="4" />
+              <Fields>
+                <Field name="moon" />
+                <Field name="velocity" />
+              </Fields>
+              <Data>
+                <r>
+                  <c>&lt;x=-1, y=0, z=2&gt;</c>
+                  <c>&lt;x=0, y=0, z=0&gt;</c>
+                </r>
+                <r>
+                  <c>&lt;x=2, y=-10, z=-7&gt;</c>
+                  <c>&lt;x=0, y=0, z=0&gt;</c>
+                </r>
+                <r>
+                  <c>&lt;x=4, y=-8, z=8&gt;</c>
+                  <c>&lt;x=0, y=0, z=0&gt;</c>
+                </r>
+                <r>
+                  <c>&lt;x=3, y=5, z=-1&gt;</c>
+                  <c>&lt;x=0, y=0, z=0&gt;</c>
+                </r>
+              </Data>
+            </Configuration>
+          </TextInput>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name>Text Input (1)</Name>
+          <DefaultAnnotationText />
+          <Left value="True" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="moon" size="18" source="TextInput:" type="String" />
+            <Field name="velocity" size="15" source="TextInput:" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxMacroInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Questions.NumericUpDown.NumericUpDown">
+        <Position x="123.5" y="97.5" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1943.5" y="539.5" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Engine.IterationNumber] &lt; 10000</Expression>
+          <Mode>Custom</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>
+            </Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2019-12-12 14:47:54</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>
+              </Operand>
+              <StartDate>2019-12-12 14:47:54</StartDate>
+              <EndDate>2019-12-12 14:47:54</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Engine.IterationNumber] &lt; 10000</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="True">
+          <RecordInfo>
+            <Field name="velocity" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+            <Field name="moon" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+        <MetaInfo connection="False">
+          <RecordInfo>
+            <Field name="velocity" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+            <Field name="moon" size="1073741823" source="Formula: &quot;&lt;x=&quot;+ToString([X])+&quot;, y=&quot;+ToString([Y])+&quot;, z=&quot;+ToString([Z])+&quot;&gt;&quot;" type="V_WString" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxGuiToolkit.Action.Action">
+        <Position x="240.5" y="97.5" width="59" height="59" />
+      </GuiSettings>
+      <Properties>
+        <Configuration />
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="2" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="True" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Targets" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="7" Connection="Output" />
+      <Destination ToolID="5" Connection="Source" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="8" Connection="True" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Output" />
+      <Destination ToolID="13" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="13" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Join" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="17" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Output" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="16" Connection="Output" />
+      <Destination ToolID="19" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="20" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Join" />
+      <Destination ToolID="27" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="28" Connection="Action" />
+      <Destination ToolID="27" Connection="Action" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="26" Connection="Question" />
+      <Destination ToolID="28" Connection="Question" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="True" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="False" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <Constants>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Output (24)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Macro Input (25)</Name>
+        <Value />
+        <IsNumeric value="False" />
+      </Constant>
+      <Constant>
+        <Namespace>Question</Namespace>
+        <Name>Numeric Up Down (26)</Name>
+        <Value />
+        <IsNumeric value="True" />
+      </Constant>
+    </Constants>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>iter12</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="False" />
+    </Events>
+    <RuntimeProperties>
+      <Actions>
+        <NoCondition>
+          <Type>NoCondition</Type>
+          <Description>(Always Run)</Description>
+          <True>
+            <Action>
+              <Type>UpdateValue</Type>
+              <Description />
+              <ToolId value="28" />
+              <Mode>Simple</Mode>
+              <Variable />
+              <Replace value="True" />
+              <ReplaceText>10000</ReplaceText>
+              <Destination>27/Expression</Destination>
+            </Action>
+          </True>
+        </NoCondition>
+      </Actions>
+      <Questions>
+        <Question>
+          <Type>Tab</Type>
+          <Description>Questions</Description>
+          <Name>Tab (21)</Name>
+          <ToolId value="21" />
+          <Questions>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (22)</Description>
+              <Name>Macro Output (22)</Name>
+              <ToolId value="22" />
+            </Question>
+            <Question>
+              <Type>MacroOutput</Type>
+              <Description>Macro Output (22)</Description>
+              <Name>Macro Output (24)</Name>
+              <ToolId value="24" />
+            </Question>
+            <Question>
+              <Type>MacroInput</Type>
+              <Description>Macro Input (25)</Description>
+              <Name>Macro Input (25)</Name>
+              <ToolId value="25" />
+            </Question>
+            <Question>
+              <Type>NumericUpDown</Type>
+              <Description>Number</Description>
+              <Name>Numeric Up Down (26)</Name>
+              <ToolId value="26" />
+              <Minimum value="0" />
+              <Maximum value="10005" />
+              <Increment value="1" />
+              <Default value="101" />
+              <Decimals value="0" />
+            </Question>
+          </Questions>
+        </Question>
+      </Questions>
+      <ModuleType>Macro</ModuleType>
+      <MacroCustomHelp value="False" />
+      <MacroDynamicOutputFields value="False" />
+      <MacroImageStd value="39" />
+      <MacroInputs />
+      <MacroOutputs />
+      <IterativeMacro>
+        <Input>Input</Input>
+        <Output>iterOut</Output>
+        <IterationLimit value="1100" />
+        <LimitBehavior>Error</LimitBehavior>
+        <OutputMode>AllSame</OutputMode>
+      </IterativeMacro>
+      <Wiz_CustomHelp value="False" />
+      <Wiz_CustomGraphic value="False" />
+      <Wiz_ShowOutput value="True" />
+      <Wiz_OpenOutputTools />
+      <Wiz_OutputMessage />
+      <Wiz_NoOutputFilesMessage />
+      <Wiz_ChainRunWizard />
+    </RuntimeProperties>
+  </Properties>
+</AlteryxDocument>
